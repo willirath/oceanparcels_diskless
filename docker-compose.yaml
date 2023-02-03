@@ -11,7 +11,9 @@ services:
     build: ./parcels
     ports:
       - "8888:8888"
+    volumes:
+      - ./parcels/notebooks:/notebooks
     working_dir: /notebooks
     environment:
-      JUPYTER_TOKEN: admin
+      JUPYTER_TOKEN: oceanparcels
     container_name: parcels

@@ -6,6 +6,6 @@ Run
 ```shell
 $ docker-compose down && docker-compose build && docker-compose up
 ```
-and connect to https://127.0.0.1:8888 using "admin" as password for Jupyter.
+and connect to https://127.0.0.1:8888 using "oceanparcels" as password for Jupyter.
 
-Details on the setup are in the [`docker-compose.yaml`](docker-compose.yaml)
+Details on the setup are in the [`docker-compose.yaml`](docker-compose.yaml).
