@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  redis_store:
+    build: ./redis_store
+    expose:
+      - 6379
+    container_name: redis_store
+
+  parcels:
+    build: ./parcels
+    ports:
+      - "8888:8888"
+    working_dir: /notebooks
+    environment:
+      JUPYTER_TOKEN: admin
+    container_name: parcels
